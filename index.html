@@ -4,135 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edo Dev Shop - Cyber Store</title>
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Edo Dev Shop - Cyber Store"/>
-    <meta property="og:description" content="EdoDev.store – Cyber Store premium. Script WhatsApp AI, panel hosting murah, dan layanan digital modern dengan performa cepat, aman, dan terpercaya."/>
-    <meta property="og:image" content="https://img1.pixhost.to/images/8739/640989125_media.jpg"/>
-    <meta property="og:image:alt" content="Edo Dev Shop - Digital Cyber Store"/>
-    <meta property="og:url" content="http://edodevstore.xiaoprivate.biz.id"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:locale" content="id_ID"/>
-    <meta property="og:site_name" content="Edo Dev Shop"/>
-    <meta property="og:updated_time" content="2025-09-16T12:00:00+07:00"/>
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Edo Dev Shop - Cyber Store"/>
-    <meta name="twitter:description" content="Cyber Store EdoDev.store – Solusi digital: script premium, AI bot, dan panel hosting modern."/>
-    <meta name="twitter:image" content="https://img1.pixhost.to/images/8739/640989125_media.jpg"/>
-    <meta name="twitter:image:alt" content="Edo Dev Shop Banner"/>
-    <meta name="twitter:site" content="@edodevstore"/>
-    <meta name="twitter:creator" content="@edodevstore"/>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Edo Dev Shop - Cyber Store">
+    <meta name="description" content="Toko digital futuristik untuk membeli Script Bot WhatsApp premium dan Panel Hosting dengan performa tinggi. Checkout mudah dan aman.">
 
-    <!-- Extra SEO & Mobile Optimization -->
-    <meta name="author" content="Edo Dev Shop Team"/>
-    <meta name="keywords" content="EdoDev, cyber store, script WhatsApp AI, panel hosting, toko digital, bot AI, premium script, Edo Dev Shop"/>
-    <meta name="robots" content="index, follow"/>
-    <meta name="theme-color" content="#10b981"/>
-    <meta name="application-name" content="Edo Dev Shop"/>
-    <meta name="apple-mobile-web-app-title" content="Edo Dev Shop"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://edodevstore.xiaoprivate.biz.id">
+    <meta property="og:title" content="Edo Dev Shop - Cyber Store">
+    <meta property="og:description" content="Toko digital futuristik untuk membeli Script Bot WhatsApp premium dan Panel Hosting dengan performa tinggi. Checkout mudah dan aman.">
+    <meta property="og:image" content="https://img1.pixhost.to/images/8739/640989125_media.jpg">
+    <meta property="og:site_name" content="Edo Dev Shop" />
+
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://edodevstore.xiaoprivate.biz.id">
+    <meta property="twitter:title" content="Edo Dev Shop - Cyber Store">
+    <meta property="twitter:description" content="Toko digital futuristik untuk membeli Script Bot WhatsApp premium dan Panel Hosting dengan performa tinggi.">
+    <meta property="twitter:image" content="https://img1.pixhost.to/images/8739/640989125_media.jpg">
+
+    <!-- Styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* --- Base & Animations --- */
-        body {
-            font-family: 'Source Code Pro', monospace;
-            background-color: #010413;
-            color: #d1d5db;
-            background-image:
-                linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
+        body { font-family: 'Source Code Pro', monospace; background-color: #010413; color: #d1d5db; background-image: linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px); background-size: 20px 20px; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes modal-in { from { opacity: 0; transform: translate(-50%, -45%); } to { opacity: 1; transform: translate(-50%, -50%); } }
-
-        /* --- Component Styles --- */
-        .tech-card {
-            background: rgba(10, 15, 38, 0.7);
-            border: 1px solid #1f2937;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            transition: all 0.3s ease-in-out;
-            position: relative;
-            overflow: hidden;
-        }
-        .tech-card:before {
-            content: '';
-            position: absolute;
-            top: 0; left: -100%;
-            width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.2), transparent);
-            transition: left 0.5s ease;
-        }
-        .tech-card:hover {
-            border-color: #10b981;
-            transform: translateY(-5px);
-        }
+        .tech-card { background: rgba(10, 15, 38, 0.7); border: 1px solid #1f2937; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: all 0.3s ease-in-out; position: relative; overflow: hidden; }
+        .tech-card:before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.2), transparent); transition: left 0.5s ease; }
+        .tech-card:hover { border-color: #10b981; transform: translateY(-5px); }
         .tech-card:hover:before { left: 100%; }
-        
-        .btn-primary {
-            background-color: #10b981;
-            color: #010413;
-            transition: all 0.2s ease;
-            font-weight: 700;
-        }
+        .btn-primary { background-color: #10b981; color: #010413; transition: all 0.2s ease; font-weight: 700; }
         .btn-primary:hover { background-color: #059669; box-shadow: 0 0 20px rgba(16, 185, 129, 0.5); }
-        
-        .btn-secondary {
-             background: transparent;
-             border: 1px solid #374151;
-             transition: all 0.2s ease;
-        }
+        .btn-secondary { background: transparent; border: 1px solid #374151; transition: all 0.2s ease; }
         .btn-secondary:hover { background: #1f2937; border-color: #10b981; }
-
-        .form-input {
-            background-color: #0a0f26; border: 1px solid #374151;
-        }
-        .form-input:focus {
-            border-color: #10b981; outline: none; box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4);
-        }
-
-        .loader {
-            border: 3px solid rgba(255, 255, 255, 0.2);
-            border-left-color: #10b981;
-            animation: spin 1s linear infinite;
-        }
+        .form-input { background-color: #0a0f26; border: 1px solid #374151; }
+        .form-input:focus { border-color: #10b981; outline: none; box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4); }
+        .loader { border: 3px solid rgba(255, 255, 255, 0.2); border-left-color: #10b981; animation: spin 1s linear infinite; }
         @keyframes spin { to { transform: rotate(360deg); } }
-
-        /* --- Toast Notification --- */
-        .toast {
-            position: fixed; top: 20px; right: 20px; z-index: 100;
-            transform: translateX(120%); opacity: 0;
-            transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
-            border-left-width: 4px;
-        }
+        .toast { position: fixed; top: 20px; right: 20px; z-index: 100; transform: translateX(120%); opacity: 0; transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1); border-left-width: 4px; }
         .toast.show { transform: translateX(0); opacity: 1; }
         .toast.success { background-color: #111827; border-color: #10b981; }
         .toast.error { background-color: #111827; border-color: #ef4444; }
-        
-        /* --- Modal (Cart) --- */
-        #cart-modal-overlay {
-            position: fixed; top: 0; left: 0;
-            width: 100%; height: 100%;
-            background-color: rgba(1, 4, 19, 0.8);
-            backdrop-filter: blur(5px);
-            z-index: 40; opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
-        }
+        #cart-modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(1, 4, 19, 0.8); backdrop-filter: blur(5px); z-index: 40; opacity: 0; transition: opacity 0.3s ease; pointer-events: none; }
         #cart-modal-overlay.active { opacity: 1; pointer-events: auto; }
-
-        #cart-modal {
-            position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            z-index: 50; width: 90%; max-width: 500px;
-            display: none;
-        }
+        #cart-modal { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 50; width: 90%; max-width: 500px; display: none; }
         #cart-modal.active { display: flex; animation: modal-in 0.3s ease-out forwards; }
     </style>
 </head>
@@ -225,12 +145,12 @@
             TELEGRAM_BOT_TOKEN: '8272578943:AAHwomTwwH7sKtjxplGGCK3VRDcLwRdoL1I',
             TELEGRAM_CHAT_ID: '7412906249',
             ADMIN_FEE: 2000,
-            PROMO_CODE: { code: 'BUYALLKU', discount: 5000 }
+            PROMO_CODE: { code: 'BUYALLKU', discount: 2000 }
         };
 
         // --- APPLICATION STATE ---
-        const state = {
-            cart: [],
+        let state = {
+            cart: [], // Now items will have a quantity property
             promoApplied: false
         };
 
@@ -253,7 +173,7 @@
             panelOptions.forEach(option => {
                 const card = document.createElement('div');
                 card.className = 'tech-card rounded-lg p-3 text-center flex flex-col justify-between';
-                const productId = `panel_${option.ram.toLowerCase().replace(' ', '_')}`;
+                const productId = `panel_${option.ram.toLowerCase().replace(/ /g, '_')}`;
                 card.innerHTML = `
                     <div>
                         <h3 class="text-md font-bold text-white">${option.ram}</h3>
@@ -268,7 +188,9 @@
         }
 
         function updateCart() {
-            getEl('#cart-counter').textContent = state.cart.length;
+            // Recalculate total items for the counter badge
+            const totalItems = state.cart.reduce((sum, item) => sum + item.quantity, 0);
+            getEl('#cart-counter').textContent = totalItems;
             renderCartItems();
             calculateTotals();
         }
@@ -285,13 +207,17 @@
                         <p class="font-semibold text-white">${item.name}</p>
                         <p class="text-gray-400">${formatCurrency(item.price)}</p>
                     </div>
-                    <button onclick="removeFromCart('${item.id}')" class="text-red-500 hover:text-red-400 font-bold p-1 text-lg">&times;</button>
+                    <div class="flex items-center gap-2 bg-gray-800 rounded-md">
+                        <button onclick="decreaseQuantity('${item.id}')" class="px-2 py-1 text-lg font-bold">-</button>
+                        <span class="px-2 font-bold">${item.quantity}</span>
+                        <button onclick="increaseQuantity('${item.id}')" class="px-2 py-1 text-lg font-bold">+</button>
+                    </div>
                 </div>
             `).join('');
         }
         
         function calculateTotals() {
-            const subtotal = state.cart.reduce((sum, item) => sum + item.price, 0);
+            const subtotal = state.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
             const discount = state.promoApplied && subtotal > 0 ? CONFIG.PROMO_CODE.discount : 0;
             const adminFee = subtotal > 0 ? CONFIG.ADMIN_FEE : 0;
             const total = Math.max(0, subtotal + adminFee - discount);
@@ -306,13 +232,32 @@
 
         // --- CART LOGIC ---
         function addToCart(product) {
-            if (state.cart.some(item => item.id === product.id)) {
-                showToast('Produk sudah ada di keranjang.', 'error');
-                return;
+            const existingItem = state.cart.find(item => item.id === product.id);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                state.cart.push({ ...product, quantity: 1 });
             }
-            state.cart.push(product);
             updateCart();
             showToast(`${product.name} ditambahkan.`);
+        }
+
+        function increaseQuantity(productId) {
+            const item = state.cart.find(i => i.id === productId);
+            if (item) item.quantity++;
+            updateCart();
+        }
+
+        function decreaseQuantity(productId) {
+            const item = state.cart.find(i => i.id === productId);
+            if (item) {
+                item.quantity--;
+                if (item.quantity <= 0) {
+                    removeFromCart(productId);
+                } else {
+                    updateCart();
+                }
+            }
         }
 
         function removeFromCart(productId) {
@@ -368,16 +313,16 @@
             }
             
             setLoading(true);
-
             const formData = new FormData(event.target);
             const name = formData.get('name');
             const email = formData.get('email');
             const whatsapp = formData.get('whatsapp');
             
-            const subtotal = state.cart.reduce((sum, item) => sum + item.price, 0);
+            const subtotal = state.cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
             const discount = state.promoApplied ? CONFIG.PROMO_CODE.discount : 0;
             const total = Math.max(0, subtotal + CONFIG.ADMIN_FEE - discount);
-            const itemsList = state.cart.map(item => `   - ${item.name} (${formatCurrency(item.price)})`).join('\n');
+            
+            const itemsList = state.cart.map(item => `   - ${item.name} <b>x${item.quantity}</b> (${formatCurrency(item.price * item.quantity)})`).join('\n');
             
             const message = `
 <b>🤖 PESANAN BARU | EdoDev.store 🤖</b>
